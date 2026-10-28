@@ -1,0 +1,306 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description"
+    content="Jornal Arcano: histórias esquecidas, grandes revoluções e mistérios do passado.">
+
+  <title>Jornal Arcano — O passado nunca se cala</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <div class="linha-superior">
+    <span>EDIÇÃO HISTÓRICA • Nº 001</span>
+    <span>UM JORNAL ALÉM DO TEMPO</span>
+  </div>
+
+  <header class="cabecalho" id="inicio">
+
+    <a href="#inicio" class="marca">
+      <span class="simbolo">✦</span>
+      <span>JORNAL <strong>ARCANO</strong></span>
+    </a>
+
+    <button class="botao-menu" id="botaoMenu"
+      aria-label="Abrir menu" aria-expanded="false">
+      ☰
+    </button>
+
+    <nav class="navegacao" id="navegacao">
+      <a href="#inicio">Início</a>
+      <a href="#destaque">Manchete</a>
+      <a href="#arquivo">Arquivo histórico</a>
+      <a href="#sobre">Sobre nós</a>
+    </nav>
+
+  </header>
+
+  <main>
+
+    <section class="abertura">
+      <p class="chamada">HISTÓRIA • CULTURA • MEMÓRIA</p>
+
+      <h1>O passado nunca<br>se cala.</h1>
+
+      <p class="subtitulo">
+        Entre ruínas, revoluções e segredos esquecidos,
+        cada época guarda uma história esperando para ser revelada.
+      </p>
+
+      <a href="#arquivo" class="botao-principal">
+        EXPLORAR O ARQUIVO <span>↗</span>
+      </a>
+
+      <div class="detalhe-abertura">
+        <span>DESDE O INÍCIO DA CIVILIZAÇÃO</span>
+        <span>✦</span>
+        <span>ATÉ O MUNDO CONTEMPORÂNEO</span>
+      </div>
+    </section>
+
+    <section class="manchete" id="destaque">
+
+      <div class="manchete-imagem">
+        <img
+          src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=85"
+          alt="Paisagem histórica de montanhas e construções antigas">
+        <span class="selo">EDIÇÃO ESPECIAL</span>
+      </div>
+
+      <div class="manchete-texto">
+        <p class="categoria">DOSSIÊ HISTÓRICO</p>
+
+        <h2>Os impérios que mudaram o destino do mundo</h2>
+
+        <p>
+          De Roma à expansão mongol, grandes impérios
+          transformaram fronteiras, economias, culturas e
+          relações de poder. Conheça os acontecimentos que
+          deixaram marcas profundas na história.
+        </p>
+
+        <button class="link-artigo" data-artigo="imperios">
+          LER A REPORTAGEM COMPLETA ↗
+        </button>
+      </div>
+
+    </section>
+
+    <section class="arquivo" id="arquivo">
+
+      <div class="titulo-secao">
+        <div>
+          <p class="categoria">O ACERVO ARCANO</p>
+          <h2>Manuscritos do passado</h2>
+        </div>
+
+        <span class="contador">01 — 06</span>
+      </div>
+
+      <label for="pesquisa" class="rotulo-pesquisa">
+        BUSCAR NO ARQUIVO
+      </label>
+
+      <input
+        id="pesquisa"
+        type="search"
+        placeholder="Pesquise um tema, período ou acontecimento..."
+      >
+
+      <div class="categorias">
+        <button class="filtro ativo" data-categoria="todos"
+          aria-pressed="true">Todos</button>
+        <button class="filtro" data-categoria="antiga"
+          aria-pressed="false">Antiguidade</button>
+        <button class="filtro" data-categoria="brasil"
+          aria-pressed="false">Brasil</button>
+        <button class="filtro" data-categoria="revolucoes"
+          aria-pressed="false">Revoluções</button>
+        <button class="filtro" data-categoria="guerras"
+          aria-pressed="false">Guerras</button>
+      </div>
+
+      <div class="grade-artigos">
+
+        <article class="artigo" data-categoria="antiga">
+          <div class="artigo-capa capa-roma">
+            <span>ANTIGUIDADE</span>
+          </div>
+
+          <div class="artigo-conteudo">
+            <p class="data-artigo">SÉCULO VIII A.C. — 476 D.C.</p>
+            <h3>Roma: a ascensão de um império</h3>
+            <p>
+              Poder, expansão territorial e heranças que
+              atravessaram séculos.
+            </p>
+            <button class="link-artigo" data-artigo="roma">
+              ABRIR ARQUIVO ↗
+            </button>
+          </div>
+        </article>
+
+        <article class="artigo" data-categoria="revolucoes">
+          <div class="artigo-capa capa-franca">
+            <span>REVOLUÇÕES</span>
+          </div>
+
+          <div class="artigo-conteudo">
+            <p class="data-artigo">1789</p>
+            <h3>A revolução que abalou a França</h3>
+            <p>
+              Desigualdade, crise política e ideias que
+              transformaram uma sociedade.
+            </p>
+            <button class="link-artigo" data-artigo="franca">
+              ABRIR ARQUIVO ↗
+            </button>
+          </div>
+        </article>
+
+        <article class="artigo" data-categoria="brasil">
+          <div class="artigo-capa capa-brasil">
+            <span>HISTÓRIA DO BRASIL</span>
+          </div>
+
+          <div class="artigo-conteudo">
+            <p class="data-artigo">1822</p>
+            <h3>Independência: além do grito</h3>
+            <p>
+              Os interesses, as disputas e os personagens
+              da separação de Portugal.
+            </p>
+            <button class="link-artigo" data-artigo="brasil">
+              ABRIR ARQUIVO ↗
+            </button>
+          </div>
+        </article>
+
+        <article class="artigo" data-categoria="antiga">
+          <div class="artigo-capa capa-egito">
+            <span>CIVILIZAÇÕES</span>
+          </div>
+
+          <div class="artigo-conteudo">
+            <p class="data-artigo">ANTIGUIDADE</p>
+            <h3>O Egito e os segredos do Nilo</h3>
+            <p>
+              Religião, poder dos faraós e a sociedade
+              construída às margens de um rio.
+            </p>
+            <button class="link-artigo" data-artigo="egito">
+              ABRIR ARQUIVO ↗
+            </button>
+          </div>
+        </article>
+
+        <article class="artigo" data-categoria="guerras">
+          <div class="artigo-capa capa-guerra">
+            <span>SÉCULO XX</span>
+          </div>
+
+          <div class="artigo-conteudo">
+            <p class="data-artigo">1939 — 1945</p>
+            <h3>O mundo em guerra</h3>
+            <p>
+              As origens, os impactos e as consequências
+              da Segunda Guerra Mundial.
+            </p>
+            <button class="link-artigo" data-artigo="guerra">
+              ABRIR ARQUIVO ↗
+            </button>
+          </div>
+        </article>
+
+        <article class="artigo" data-categoria="brasil">
+          <div class="artigo-capa capa-republica">
+            <span>BRASIL REPUBLICANO</span>
+          </div>
+
+          <div class="artigo-conteudo">
+            <p class="data-artigo">1889</p>
+            <h3>A queda da monarquia brasileira</h3>
+            <p>
+              Os conflitos políticos e militares que
+              levaram à Proclamação da República.
+            </p>
+            <button class="link-artigo" data-artigo="republica">
+              ABRIR ARQUIVO ↗
+            </button>
+          </div>
+        </article>
+
+      </div>
+
+      <p id="semResultados" hidden>
+        Nenhum registro encontrado. Tente outra pesquisa.
+      </p>
+
+    </section>
+
+    <section class="citacao">
+      <span class="aspas">“</span>
+      <blockquote>
+        Estudar a história é investigar as escolhas,
+        os conflitos e as ideias que construíram o presente.
+      </blockquote>
+      <p>UMA REFLEXÃO DO JORNAL ARCANO</p>
+    </section>
+
+    <section class="sobre" id="sobre">
+      <div class="sobre-simbolo">✦</div>
+      <p class="categoria">NOSSA MISSÃO</p>
+      <h2>Dar voz às histórias do tempo.</h2>
+      <p>
+        O Jornal Arcano é um projeto independente de divulgação
+        histórica. Nosso propósito é explorar acontecimentos,
+        personagens e sociedades de forma acessível, crítica
+        e contextualizada.
+      </p>
+      <p class="nota-editorial">
+        História não é apenas uma sequência de datas.
+        É memória, interpretação, evidência e debate.
+      </p>
+    </section>
+
+  </main>
+
+  <footer class="rodape">
+    <a href="#inicio" class="marca">
+      <span class="simbolo">✦</span>
+      <span>JORNAL <strong>ARCANO</strong></span>
+    </a>
+
+    <p>O passado nunca se cala.</p>
+    <p class="copyright">© 2026 Jornal Arcano • Todos os direitos reservados.</p>
+  </footer>
+
+  <dialog id="janelaArtigo" class="janela-artigo">
+    <button id="fecharArtigo" class="fechar"
+      aria-label="Fechar artigo">✕</button>
+
+    <p class="categoria" id="modalCategoria"></p>
+    <h2 id="modalTitulo"></h2>
+    <div id="modalTexto"></div>
+
+    <p class="aviso-fontes">
+      Texto introdutório para fins educativos.
+      Consulte referências históricas para aprofundamento.
+    </p>
+  </dialog>
+
+</body>
+</html>
